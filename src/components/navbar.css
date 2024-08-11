@@ -1,0 +1,35 @@
+
+.navbar-ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+.title{
+    color: rgb(255, 255, 255);
+    padding-bottom: 1%;
+}
+
+li  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    float: left;
+    transition: background-color 1s, transform 1s;
+    box-sizing: border-box;
+    margin-right: 2%;
+    border-radius: 10%;
+    background-color: rgba(60,60,60,0.1);
+    font-size: 1.5em;
+  }
+  li:last-child{
+    margin-right: 0;
+  }
+  li:hover{
+    background-color: #6f94a2;
+    transform: scale(1.2);
+    border-radius: 10%;
+  }

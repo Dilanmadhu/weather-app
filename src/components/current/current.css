@@ -1,0 +1,115 @@
+
+.grid-container-current{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2%;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100%;
+    
+}
+
+.item-set{
+    width:50%;
+    max-height: 100%;
+   
+}
+
+.time-text{
+    color: #ffffff;
+}
+
+.weather-current{
+    width:  47%;
+   
+}
+
+
+.city-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+}
+.region-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:bisque;
+}
+
+/* main weather css */
+
+.main-weather-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.main-weather-img{
+    
+        width:100%;
+        height:auto
+        
+}
+
+.main-weather-img-container{
+    width: 60%;
+   
+}
+
+
+.main-weather-value{
+    width: 34%;
+}
+
+.condition-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(15px, 2vw, 30px); 
+    color: #ffffff;
+    
+}
+
+@media (max-width:750px){
+    .item-set{
+        width: 100%;
+        order: 2;
+        overflow-x: scroll;
+    }
+    .weather-current{
+        width: 100%;
+        order: 1;
+    }
+    .main-weather-block{
+        gap: 5%;
+    }
+    .main-weather-img-container,
+    .main-weather-value{
+        width: 100%;
+       
+    }
+    .condition-text{
+        font-size: 2em;
+    }
+    .grid-container-current{
+        display: flex;
+        flex-wrap: wrap;
+        gap:50px;
+        height: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        
+
+    }
+}

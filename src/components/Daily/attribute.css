@@ -1,0 +1,29 @@
+.att-img-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+}
+
+.att-img{
+    
+    width: 80%;
+    height: auto;
+    padding: 5%;
+    box-sizing: border-box;
+    max-width: 60px;
+    filter: invert(100%) brightness(1000%);
+    
+}
+.value-text-day{
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.att-container{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    gap: 10px;
+}

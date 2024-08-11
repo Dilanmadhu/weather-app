@@ -1,0 +1,63 @@
+
+
+.grid-container-itemset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    height: 100%; 
+    width: 100%;
+    min-height: 90%;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+}
+
+.block {
+    height: 100%; 
+    width: 100%;
+}
+
+.item {
+    width: 30%; 
+    /*background-color: rgb(75, 93, 121);*/
+    background-color: #808080;
+    border-radius: 20%;
+  /*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);*/
+    padding: 4px; /* Adjust padding to reduce overall size */
+    box-sizing: border-box; /* Include padding and border in the height */
+    overflow: hidden; /* Prevent overflow with hidden content */
+    margin: 1%; /* Adjust margin as needed */
+    min-width:80px;
+    max-width:200px;
+    max-height: 200px;
+}
+
+@media (max-width: 1500px) {
+    .item {
+        width: 150px; /* Adjust width for smaller screens */
+        height: 150px;
+        
+        
+    }
+}
+
+@media (max-width: 750px) {
+    .item {
+        width: 150px;
+        height: 150px;
+        margin: 5px 
+        
+        
+    }
+
+    .grid-container-itemset{
+        width: 1000px;
+        flex-wrap: nowrap;
+        
+    }
+}
+
+
+
+
+

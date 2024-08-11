@@ -1,0 +1,63 @@
+.main-container-daily{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 100%;
+}
+.future{
+    width: 35%;
+    animation-duration: 3s;
+    animation-name: loading-item;
+}
+
+@keyframes loading-item {
+    from{
+        transform: translate(20vw, 0);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+.new-day{
+    width: 30%;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes slidein {
+    from {
+      translate: 100% 0; 
+    }
+    50%{
+      translate: 0 0;  
+    }
+    100% {
+      translate: 0 45vh;
+    }
+  }
+@media (max-width:750px){
+    
+
+    .main-container{
+        gap: 20px;
+    }
+
+
+    .new-day{
+        display: none;
+    }
+    .future{
+        width: 100%;
+        height: auto;
+    }
+    .main-container-daily{
+        flex-wrap: nowrap;
+        width: 180%;
+        
+    }
+}
